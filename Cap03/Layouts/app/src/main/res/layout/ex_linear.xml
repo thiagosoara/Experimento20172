@@ -1,11 +1,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
     <!-- Linha 1 -->
     <LinearLayout
         android:layout_height="wrap_content"
-        android:layout_width="match_parent">
+        android:layout_width="match_parent"
+        >
         <Button
             android:text="Um"
             android:layout_width="wrap_content"
@@ -44,7 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent">
         <Button
-            android:text="Um"
+            android:text="Um dos principais"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
@@ -64,7 +65,7 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent">
         <Button
-            android:text="Um"
+            android:text="Umasdasdasdasdadasdasdasdasdadasdasd"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
@@ -96,7 +97,8 @@
         <Button
             android:text="de peso"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            />
     </LinearLayout>
     <!-- Linha 6 -->
     <LinearLayout

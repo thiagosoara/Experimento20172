@@ -7,4 +7,5 @@
     android:layout_height="wrap_content"
     android:paddingTop="@dimen/toolbar_padding"
     android:background="?attr/colorPrimary"
-    android:minHeight="?attr/actionBarSize" />
+    android:minHeight="?attr/actionBarSize"
+    android:elevation="4dp"/>

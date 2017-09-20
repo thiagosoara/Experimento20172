@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.util.Log;
+import android.widget.TextView;
 
 import java.util.Locale;
 
@@ -14,6 +15,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        TextView tvHellow = (TextView) findViewById(R.id.tv_hellow);
+
+        tvHellow.setText("Primeiro código!!");
 
         Configuration configuration = getResources().getConfiguration();
         DisplayMetrics metrics = getResources().getDisplayMetrics();

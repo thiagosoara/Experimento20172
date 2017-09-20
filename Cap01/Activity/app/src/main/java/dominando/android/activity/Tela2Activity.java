@@ -13,7 +13,7 @@ public class Tela2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_tela2);
         TextView txt = (TextView)findViewById(R.id.txtTexto);
         Intent it = getIntent();
-        Cliente cliente = it.getParcelableExtra("cliente");
+        Cliente cliente = (Cliente) it.getSerializableExtra("cliente");
         if (cliente != null) {
             String texto = String.format("Nome: %s / Código: %d",
                     cliente.nome, cliente.codigo);

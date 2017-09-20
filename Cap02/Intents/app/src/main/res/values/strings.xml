@@ -12,6 +12,7 @@
         <item>Configurações</item>
         <item>Minha ação 1</item>
         <item>Minha ação 2</item>
+        <item>Ação</item>
         <item>Sair</item>
     </string-array>
     <string name="erro_intent">Ação não suportada.</string>

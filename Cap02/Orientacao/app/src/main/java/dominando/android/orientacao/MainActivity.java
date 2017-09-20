@@ -2,6 +2,7 @@ package dominando.android.orientacao;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
                 android.R.layout.simple_list_item_1, nomes);
         listView.setAdapter(adapter);
     }
+
     public void meuBotaoClick(View v) {
         nomes.add(edt.getText().toString());
         edt.setText("");
@@ -38,5 +40,35 @@ public class MainActivity extends AppCompatActivity {
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putStringArrayList("nomes", nomes);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.i("TDSA", "ONSTART");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.i("TDSA", "ONRESUME");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.i("TDSA", "ONPAUSE");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.i("TDSA", "ONSTOP");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.i("TDSA", "ONDESTROY");
     }
 }
